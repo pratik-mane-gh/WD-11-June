@@ -9,7 +9,7 @@
 
 <body>
     <form action="#">
-        <fieldset>
+        <fieldset width="50%">
         <legend>Registration Form</legend>
 
         <br><br>
@@ -23,9 +23,13 @@
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
         <br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" cols="40" rows="5"></textarea>
 
-        <label for="mobile">Mobile No:</label>
-        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number">
+        <br><br>
+
+        <label for="mobile">Contact No:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your contact number">
 
         <br><br>
 
@@ -34,8 +38,38 @@
 
         <br><br>
 
+        <label>Gender:</label>
+        <input type="radio" name="gender" >
+        <label for="male">Male</label>
+        <input type="radio" name="gender">
+        <label for="female">Female</label>
+        
+        <br><br>
+        <!--Checkboxes-->
+        <label for="hobbies">Course:</label>
+        <input type="checkbox" >Web-Development
+        <input type="checkbox" >SQL 
+        <input type="checkbox">C
+        <input type="checkbox" >JAVA
+        <input type="checkbox" >Testing 
+        <input type="checkbox">Python
+
+        <br><br>
+        <!-- Dropdown -->
+        <label for="course">Select Branch:</label>
+        <select>
+            <option value="">Select a branch</option>
+            <option value="hadapsar">Hadapsar</option>
+            <option value="Shivaji nagar">Shivaji Nagar</option>
+            <option value="pcmc">PCMC</option>
+        </select>
+
+        <br><br>
+
         <input type="submit" value="Register">
         <input type="reset" value="Reset">
+
+        <button type="button">Go to Chess Board</button>
         </fieldset>
     </form>
 </body>
