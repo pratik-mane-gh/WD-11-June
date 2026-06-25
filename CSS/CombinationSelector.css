@@ -1,0 +1,24 @@
+/*Combinator Selector */
+
+/* Descendent Combinator Selector */
+div p{
+    color: blue;
+}
+
+/* Child Combination Selector */
+div>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+/* Adjacent Sibling Combination Selector */
+div+p{
+    background-color: #a3d0ea;;
+}
+
+
+/* General Sibling Combination Selector */
+div~p{
+    font-style: italic;
+    color: green;
+}
