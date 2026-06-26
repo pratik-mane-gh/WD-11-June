@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:40px;
+}
+
+.primary-btn{
+    color: rgb(183, 80, 16);
+    padding: 10px;
+}
+
+/* hover pseudo class selector */
+.primary-btn:hover{
+    color: red;
+}
+
+/* active pseudo class selector */
+.primary-btn:active{
+    color: black;
+    background-color: white;
+    border: 4px solid green;
+}
+
+/* focus pseudo class selector */
+input:focus{
+    border: 2px solid red;
+    background-color: lightgoldenrodyellow;
+    outline: none;
+    
+}
+
+/* Visited pseudo class selector */
+
+.primary-btn:visited{
+    color: rgb(213, 201, 31);
+}
+
+/* first-child  pseudo class selector */
+p:first-child{
+      color: red;
+      font-weight: bold;
+}
+
+/* last-child  pseudo class selector */
+p:last-child{
+      color: rgb(51, 129, 15);
+      font-weight: bold;
+}
+
+/* nth-child  pseudo class selector */
+p:nth-child(2){
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
