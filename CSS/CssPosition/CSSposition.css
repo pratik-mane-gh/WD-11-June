@@ -1,0 +1,126 @@
+body {
+      font-family: Arial, sans-serif;
+      height: 2000px;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+      padding: 20px;
+      border: 2px solid #ccc;
+    }
+
+    .box {
+      width: 120px;
+      height: 80px;
+      background-color: orange;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+    }
+
+    /* 1. STATIC */
+    .static-box {
+      position: static;
+      background-color: lightgray;
+    }
+
+    /* 2. RELATIVE */
+    .relative-box {
+      position: relative;
+      left: 50px;
+      top: 20px;
+      background-color: lightgreen;
+    }
+
+    /* 3. ABSOLUTE */
+    .parent {
+      position: relative;
+      height: 200px;
+      border: 2px dashed black;
+    }
+
+    .absolute-box {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      background-color: lightblue;
+
+    }
+
+    /* 4. FIXED */
+    .fixed-box {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: red;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* 5. STICKY */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: yellow;
+      padding: 15px;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    /* 6. TRANSFORM */
+    .rotate-box {
+      transform: rotate(20deg);
+      background-color: pink;
+    }
+
+    .scale-box {
+      transform: scale(1.2);
+      background-color: violet;
+    }
+
+    .skew-box {
+      transform: skew(30deg);
+      background-color: skyblue;
+    }
+
+    .translate-box {
+      transform:translateX(50px);
+      background-color: lightcoral;
+    }
+
+    /* 7. TRANSITION */
+    .transition-box {
+      background-color: purple;
+      color: white;
+      transition: all 2s ease-in-out;
+    }
+
+    .transition-box:hover {
+      width: 250px;
+      background-color: green;
+      border-radius: 30px;
+    }
+
+    /* 8. ANIMATION */
+    .animation-box {
+      background-color: brown;
+      color: white;
+      animation: moveBox 3s ease-in-out infinite;
+    }
+
+    @keyframes moveBox {
+      0% {
+        transform: translateX(0);
+      }
+
+      50% {
+        transform: translateX(200px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
